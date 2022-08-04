@@ -1,0 +1,38 @@
+footer {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    border-top: 6px solid #f98012;
+    background-color: black;
+    line-height: 10vh;
+    &.royalFooter{
+        border-top: 6px solid royalblue; 
+    }
+    &.greenFooter{
+        border-top: 6px solid green; 
+    }
+}
+
+@media (min-width: 500px) and (orientation: portrait) {
+    footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+    footer {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+    footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    footer {
+        font-size: 2.5rem;
+    }
+}

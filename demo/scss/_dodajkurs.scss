@@ -1,0 +1,95 @@
+.dodajKurs{
+    margin-top: 10px;
+    background-color: royalblue;
+    width:90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+
+    label{
+        display: block;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #f98012;
+    }
+
+    input{
+        display: block;
+        font-size: 2rem;
+        text-indent: 5px;
+        height: 40px;
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid black;
+ 
+        // Font styles
+        &:-webkit-autofill::first-line {
+            font-family: arial;
+            font-size: 2rem;
+        } 
+
+        &.dodaj{
+            text-indent: 0px;
+            color:white;
+            border-radius: 10px;
+            width: 70%;
+            height: 50px;
+            margin: 0 auto;
+            border: none;
+            background-color: #f98012;
+            padding: 10px;
+    
+            &:hover{
+                cursor: pointer;
+                background-color: gray;
+            }
+        }
+    }
+    textarea{
+        font-size: 2rem;
+        text-indent: 5px;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 200px;
+        display: block;
+    }
+    
+    .blad{
+        text-align: center;
+        color: red;
+        font-size: 1.7rem;
+        margin-bottom: 5px;
+    }
+    
+    @media (min-width: 1024px) {
+        max-width: 1024px;
+        label{
+            font-size: 3rem;
+
+        }
+    
+        input{
+            height: 60px;
+            font-size: 3rem;
+            // Font styles
+            &:-webkit-autofill::first-line {
+                font-size: 3rem;
+            } 
+    
+            &.dodaj{
+
+                height: 70px;
+            }
+        }
+        textarea{
+            font-size: 3rem;
+            
+        }
+        
+        .blad{
+            font-size: 2.5rem;
+        }
+    }  
+
+}

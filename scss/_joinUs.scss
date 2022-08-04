@@ -1,0 +1,85 @@
+.joinUs {
+    height: calc(100vh - 60px);
+    min-height: 400px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/header2.jpg);
+
+    div {
+        position: absolute;
+        right: calc(50% - 150px);
+        top: calc(50% - 150px);
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgba(207, 76, 0, 0.9);
+        border-radius: 80px;
+
+        p {
+            &:first-child {
+                padding-bottom: 15px;
+                border-bottom: 2px solid white;
+                color: white;
+                font-size: 23px;
+            }
+            &+p {
+                color: white;
+                font-size: 17px;
+                margin-top: 5%;
+            }
+        }
+
+        button {
+            width: 60%;
+            height: 20%;
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            top: 70%;
+            left: calc(50% - 30%);
+            background: transparent;
+            text-transform: uppercase;
+            border: 4px solid white;
+        }
+    }
+
+
+    @media (min-width: 500px){
+
+        div {
+            right: calc(50% - 200px);
+            top: calc(50% - 125px);
+            width: 400px;
+            height: 280px;
+        }
+    }
+
+    @media (min-width: 1024px){
+
+        div {
+            right: 10%;
+            top: calc(50% - 175px);
+            width: 500px;
+            height: 350px;
+
+            p {
+                &:first-child {
+                    font-size: 4rem;
+                }
+                &+p {
+                    font-size: 2rem;
+                    margin-top: 5%;
+                }
+            }
+
+            button {
+                font-size: 2rem;
+                position: absolute;
+                top: 60%;
+                left: calc(50% - 30%);
+            }
+        }
+
+    }
+}

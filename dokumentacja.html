@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+	    <meta charset="UTF-8">
+      <title>Dokumentacja systemu MUD3L</title>
+      <style>
+         .document {padding:20px;display: block; margin-left: auto; margin-right: auto; width: 70%; background: #fff; font-family: 'Poppins', sans-serif; padding-right: 25px; padding-left: 25px;}
+         .images {display: block; margin-left: auto; margin-right: auto; width: 70%; background: #fff; box-shadow: 10px 10px 5px #999;}
+ol[type="a"] {
+    margin-left: 30px;
+}
+         h1 {padding: 15px 0px 0px 25px; font-size: 2.3rem; font-family: sans-serif;}
+         .list {font-weight: bold; font-size:1.8rem;}
+         .second-list {font-weight: normal;}
+         p {color: #000; font-weight: normal; font-size:1.8rem;}
+         <!-- .background {background-image: linear-gradient(180deg, #436be3, #4faf59, #f98012);} -->
+         .background {background-image: url("dokumentacja/tlo.png");}
+      </style>
+
+
+
+
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUD3L</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+
+   </head>
+   <body>
+
+       <nav class="menu">
+        <a href="index.html"><img src="img/logo.png"></a>
+        <button><i class="fas fa-bars"></i></button>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i><span> Strona Główna</span></a></li>
+            <li class="active"><a href="dokumentacja.html">Dokumentacja</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="demo/index.php">Demo</a></li>
+            <li><a href="aboutUs.html">O nas</a></li>
+        </ul>
+    </nav>
+<section>
+      <div class="background">
+         <div class="document">
+            <h1>Dokumentacja systemu MUD3L</h1>
+            <ol type="I" class="list">
+               <li>
+                  Cel projektu
+                  <p>Celem stworzenia modelu konceptualnego adaptacyjnego internetowego systemu multimedialnego jest umożliwienie zdobycia wiedzy w wybranych dziedzinach nauki,<b> uwzgledniając preferencję stylu przyswajania wiedzy przez użytkowników.</b></p>
+               </li>
+               <li>
+                  Opis funkcjonalności poszczególnych użytkowników
+                  <p></p>
+                  <ol type="a">
+                     <li>
+                        <b>Uczeń</b>
+                        <p>
+                           System umożliwia rejestrację ucznia oraz nauczyciela. Po zalogowaniu jako uczeń, możemy przejść do kategorii kursów i wybrać interesujący nas przedmiot.
+                        </p>
+                        <img src="dokumentacja/2.png" screen="screen1" class="images">
+                        <p><br/>Podczas pierwszego logowania pojawia się kwestionariusz ankiety, na podstawie którego odbywa się weryfikacja stylu uczenia się użytkownika, tak, by przyswojenie wiedzy z kursów było możliwie jak najlepsze.</p>
+                        <img src="dokumentacja/1.png" screen="screen2" class="images">
+                        <br/>
+                        <p>Wyróżniamy 3 typy stylów uczenia się: <b>słuchowiec, wzrokowiec, działaniowec.</b>
+                           Wynik ankiety trafia do bazy danych i na jego podstawie wyświetlane są odpowiednie treści użytkownikowi.
+                        </p>
+                        <p>Po zweryfikowaniu stylu uczenia się, możemy zapisać się do interesującego nas kursu w danej kategorii, np. <i>Kursy Informatyczne -> Kurs: Programowanie w języku Java</i>.</p>
+                        <img src="dokumentacja/3.png" screen="screen3" class="images">
+                        <br/>
+                        <p><u>Po zapisaniu się do kursu, użytkownik musi poczekać na akceptację przez administratora.</u> Po zaakceptowaniu kursanta, możemy przejść do lekcji w kursie. Na stronie udostępnione są wszystkie lekcje przygotowane przez nauczyciela.</p>
+                        <img src="dokumentacja/4.png" screen="screen4" class="images">
+                        <br/>
+                        <p>Po każdej lekcji przygotowany jest test z pytaniami dotyczącymi tematu. <u>Aby przejść do kolejnych zajęć, musimy prawidłowo rozwiązać test z poprzedniej lekcji.</u></p>
+                        <img src="dokumentacja/5.png" screen="screen5" class="images">
+                        <br/>
+                        <img src="dokumentacja/6.png" screen="screen6" class="images">
+                        <br/>
+                        <p>Jeśli nie uda nam się poprawnie rozwiązać testu, można rozwiązać go po raz kolejny, z możliwością wyboru lekcji przygotowanej pod inny styl uczenia się użytkownika, co być może umożliwi lepsze przyswojenie danego tematu dzięki innemu sposobowi prezentacji treści.</p>
+                        <img src="dokumentacja/9.png" screen="screen9" class="images">
+                        <br/>
+                        <img src="dokumentacja/10.png" screen="screen10" class="images">
+                        <br/>
+                        <p>Po uzyskaniu odpowiedniej ilości punktów z testu, użytkownik może przejść do kolejnego tematu.</p>
+                        <img src="dokumentacja/8.png" screen="screen8" class="images">
+                        <br/>
+                        <p>W profilu ucznia widoczne są wszystkie kursy, na które się zapisał, a także te na które już uczęszcza. Wyświetlane są również wszystkie dane użytkownika, m.in. typ nauki, typ konta, data dołączenia, dane osobiste itp.</p>
+                        <img src="dokumentacja/19.png" screen="screen19" class="images">
+                        <br/>
+                     </li>
+                     <li>
+                        <b>Nauczyciel</b>
+                        <p>Po zalogowaniu do systemu jako nauczyciel, możemy przejść do kategorii kursów. W poszczególnych kategoriach nauczyciel widzi wszystkie dostępne kursy, do których także może się zapisać i uczestniczyć w nich jako kursant. Główną funkcjonalnością jest możliwość dodawania kursów do systemu, a także zarządzanie nimi.</p>
+                        <img src="dokumentacja/11.png" screen="screen11" class="images">
+                        <br/>
+                        <img src="dokumentacja/12.png" screen="screen12" class="images">
+                        <br/>
+                        <p>Tworząc kurs, dodajemy nazwę i opis. <u>Czekamy na akceptację kursu przez administratora.</u> Następnie w kursie jako nauczyciel dodajemy poszczególne lekcje. Oprócz lekcji, nauczyciel może dodać test sprawdzający wiedzę z poszczególnych zajęć, odpowiednio przypisując test do lekcji.</p>
+                        <img src="dokumentacja/13.png" screen="screen13" class="images">
+                        <br/>
+                        <p>Zarządzanie testem to możliwość dodawania i usuwania pytań oraz wyznaczenie właściwej odpowiedzi.</p>
+                        <img src="dokumentacja/15.png" screen="screen15" class="images">
+                        <br/>
+                        <p>Może także zarządzać użytkownikami, tj. usuwać kursantów i akceptować chęć uczestnictwa w kursie.</p>
+                        <img src="dokumentacja/14.png" screen="screen14" class="images">
+                        <br/>
+                        <p>W zarządzaniu lekcją, nauczyciel przygotowuje treści odpowiednie dla każdego stylu nauczania, które są później wyświetlane dla użytkowników o zdefiniowanym stylu.</p>
+                        <img src="dokumentacja/16.png" screen="screen16" class="images">
+                        <br/>
+                        <p><b>Dla słuchowca:</b> nauczyciel wprowadza treść tekstową i dodaje pliki audio w formacie mp3 z komputera, które są później przesyłane na serwer. W treści tekstowej możemy także osadzić link do filmu z Youtuba. <br/>
+                           <b>Dla wzrokowca:</b> nauczyciel wprowadza treść tekstową i dodaje linki do zasobów np. filmowych. <br/>
+                           <b>Dla działaniowca:</b> nauczyciel wprowadza treść tekstową i dodaje linki do zasobów. 
+                           Uzupełniając szablony dla wszystkich typów nauki, tworzymy pełną lekcję w kursie.
+                        </p>
+                     </li>
+                     <li>
+                        <b>Administrator</b>
+                        <p>Administrator ma takie same prawa jak nauczyciel, opisane wyżej. Ponadto to właśnie administrator akceptuje rejestrację nauczyciela do systemu, po to, by ograniczyć możliwość przypadkowym użytkownikom pełnienia takiej roli w systemie. Ma również prawo do akceptacji zapisu do kursu, akceptacji stworzenia kursu oraz możliwość uczestniczenia w innych kursach.</p>
+                        <img src="dokumentacja/17.png" screen="screen17" class="images">
+                        <br/>
+                        <p>Co więcej, może tworzyć konta uczniom i nauczycielom.</p>
+                        <img src="dokumentacja/18.png" screen="screen18" class="images">
+                     </li>
+                  </ol>
+               </li>
+               <br/><br/>
+               <li>
+                  Dodatkowe elementy projektu
+                  <p>Oprócz wymaganej funkcjonalności systemu, stworzyliśmy dodatkowe elementy, po to, by system był kompletny, konkurencyjny i przyjazny użytkownikowi. 
+                     Oprócz wersji demo, która została zaprezentowana wyżej, użytkownik może pobrać wersję systemu i “postawić” na własnym serwerze. Mamy także przygotowaną zakładkę “O nas”, która zapoznaje użytkownika z twórcami programu. W zakładce “Dokumentacja” znajduje się pełny opis systemu, przedstawiający jego spektrum możliwości.
+                  </p>
+               </li>
+               <li>
+                  Wykorzystane technologie 
+                  <p></p>
+                  <ol type="a" class="second-list">
+                     <li>HTML - struktura strony</li>
+                     <li>
+                        CSS - stylizacja wyglądu strony i zachowanie responsywności dla urządzeń mobilnych
+                        <ul>
+                           <li>scss</li>
+                           <li>flexbox</li>
+                           <li>mediaquerry</li>
+                        </ul>
+                     </li>
+                     <li>
+                        PHP - połączenie z bazą danych i manipulacja na danych z bazy
+                        <ul>
+                           <li>mysqli</li>
+                        </ul>
+                     </li>
+                     <li>
+                        JavaScript - animacje na stronie i obsługa przycisków
+                        <ul>
+                           <li>JQuerry - biblioteka do js</li>
+                        </ul>
+                     </li>
+                     <li>SQL - tworzenie zapytań do bazy</li>
+                  </ol>
+                  <br/>
+                  <br/>
+                  <p>Większość stron jest zabezpieczona przed nieautoryzowanym wejściem bądź próbą ingerencji w bazę danych systemu.  Na potrzeby projektu został wykupiony serwer WWW, który obsługuje phpMyAdmin, gdzie utworzyliśmy nową bazę danych. Serwer jest wykupiony do 23.07.2021 roku. Dzięki takiemu rozwiązaniu uzyskaliśmy możliwość magazynowania danych za pomocą serwera FTP.</p>
+               </li>
+            </ol>
+            <br/>
+         </div>
+      </div>
+
+</section>
+<script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/menu.js"></script>
+   </body>
+</html>

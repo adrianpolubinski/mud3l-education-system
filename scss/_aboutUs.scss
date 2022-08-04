@@ -1,0 +1,106 @@
+.aboutUs{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    h1{
+        width: 100%;
+        font-size: 3rem;
+        padding: 10px 0;
+        text-align: center;
+        margin: 0 0 20px;
+        background-color: #f98012;
+        color:white;
+    }
+
+    article{
+        max-width: 1700px;
+
+        transition: .5s linear;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &.art1,&.art3
+        {
+            transform: translateX(100vw);
+            &.active{
+                transform: translateX(0);
+            }
+        }
+        &.art2,&.art4
+        {
+            transform: translateX(-100vw);
+            &.active{
+                transform: translateX(0);
+            }
+        }
+
+
+        h2{
+            width: 100%;
+            text-align: center;
+            background-color: royalblue;
+            padding: 20px 0 20px 5vw;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: white;
+        }
+    
+        img{
+            width: 50%;
+        }
+        
+        p {
+            font-size: 1.6rem;
+            text-align: justify;
+            padding: 0 10px;
+            line-height: 2;
+        }
+    }
+
+    
+
+    @media (min-width: 600px){
+        article{
+            display: inline;   
+            img{
+                max-width: 200px;
+                width: 25%;
+                float: left;
+            }
+            
+            p {
+                font-size: 1.8rem;
+                float: left;
+                width: 75%;
+            }
+        }
+    }
+
+    @media (min-width: 1000px){
+        article{             
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+    @media (min-width: 1400px){
+        h1{
+            font-size: 5rem;
+        }
+        article{ 
+            h2{font-size: 3rem;}   
+            img{
+                max-width: 300px;
+            }          
+            p {
+                margin-left: 50px;
+                font-size: 3rem;
+            }
+        }
+    }
+   
+}
+

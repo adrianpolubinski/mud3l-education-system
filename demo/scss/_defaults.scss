@@ -1,0 +1,21 @@
+// Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Settings
+html {
+    font-size: 10px;
+    font-family: arial, sans-serif;
+}
+
+
+// Clearfix
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+   

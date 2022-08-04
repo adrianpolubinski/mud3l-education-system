@@ -1,0 +1,25 @@
+Instrukcja instalacji na serwerze XAMPP:
+
+1) zawartość folderu wrzucamy do folderu htdocs, który znajduje się w plikach intalacynych oprogramowania XAMPP.
+2) otwieramy program XAMPP, uruchamiamy apache i MySQL
+3) w MySQL uruchamiamy phpMyAdmin i tworzymy baze danych o nazwie "mud3l".
+4) wybieramy nową baze danych (mud3l) i importujemy plik "aism_database.sql"
+5) w pliku connection.php są ustawione standardowe ustawienia pod xampp. Jeżeli baza danych nie będzie działać, prawdopodobnie będzie trzeba przeprawic dane uzytkownika na własne.
+
+
+Dane od logowania:
+Administrator:
+login: admin
+hasło: admin
+
+Kursant:
+login: kursant
+haslo: kursant@123
+
+Nauczyciel:
+login: nauczyciel
+haslo: nauczyciel
+
+
+UWAGA!
+System dodawania i usuwania plików (dla sluchowca) stosuje mechanizm usuwania i dodawania plików przez FTP. Takie rozwiązanie nie będzie prawidłowo działac na serwerze XAMPP.

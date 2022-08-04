@@ -1,0 +1,149 @@
+.animations {
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    background-color: rgb(136, 231, 255);
+    border-bottom: #f98012 solid 12px;
+
+    .landscape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/header.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    .svg-sun {
+        position: absolute;
+        top: 0;
+        left: calc(50% - 75px);
+        width: 150px;
+        height: 150px;
+        transform-origin: 50% 50%;
+        animation: spin 25s linear infinite, sun-glow 3s linear infinite;
+
+        circle {
+            stroke-width: 18;
+            stroke-dasharray: 2;
+            stroke-dashoffset: 2;
+        }
+    }
+
+    img {
+        position: absolute;
+        left: -200px;
+        height: 100px;
+        &.cloud1 {
+            top: 20px;
+            animation: cloudAnim 18s linear infinite;
+        }
+
+        &.cloud2 {
+            top: 50px;
+            animation: cloudAnim 18s 3s linear infinite;
+        }
+
+        &.cloud3 {
+            top: 10px;
+            animation: cloudAnim 18s 6s linear infinite;
+        }
+        &.cloud4 {
+            top: 50px;
+            animation: cloudAnim 18s 9s linear infinite;
+        }
+        &.cloud5 {
+            top: 20px;
+            animation: cloudAnim 18s 12s linear infinite;
+        }
+        &.cloud6 {
+            top: 70px;
+            animation: cloudAnim 18s 15s linear infinite;
+        }
+    }
+
+
+
+
+    div.boy {
+        z-index: 2;
+        position: absolute;
+        bottom: 0px;
+        right: 60%;
+        height: 200px;
+        width: 113px;
+        animation: boyAnim 1s infinite steps(7),
+            boyMove 7s linear infinite;
+        background-image: url(../img/animatedGuy.png);
+        background-repeat: no-repeat;
+    }
+
+
+
+    // sun
+    @keyframes sun-glow {
+        0% {
+            fill: #f1c40f;
+            stroke: #f1c40f;
+        }
+
+        50% {
+            fill: #e67e22;
+            stroke: #e67e22;
+        }
+
+        100% {
+            fill: #f1c40f;
+            stroke: #f1c40f;
+        }
+    }
+
+    @keyframes spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    //clouds
+    @keyframes cloudAnim {
+        100% {
+            left: 100%;
+        }
+    }
+
+
+
+    // boy
+    @keyframes boyAnim {
+        100% {
+            background-position-x: -793px;
+        }
+    }
+
+    @keyframes boyMove {
+        0% {
+            transform: rotateY(0deg);
+        }
+
+        49.9% {
+            transform: rotateY(0deg);
+        }
+
+        50% {
+            transform: rotateY(180deg);
+            right: 0;
+        }
+
+        99.9% {
+            transform: rotateY(180deg);
+        }
+
+        100% {
+            transform: rotateY(0deg);
+        }
+    }
+}

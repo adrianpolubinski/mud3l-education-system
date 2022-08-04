@@ -1,0 +1,183 @@
+.menu {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+    position: relative;
+    
+    //boxshadow visible
+    z-index: 100;
+
+    &.menu-fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+    }
+
+    img {
+        height: 30px;
+    }
+
+    button {
+        color: white;
+        font-size: 3rem;
+        outline: none;
+        border-style: none;
+        background-color: transparent;
+    }
+
+
+    ul {
+        height: 60px;
+        display: none;
+        list-style: none;
+        
+        &.active {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top:100%;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            background-color: black;
+        }
+
+        li {
+            text-align: center;
+            
+            &:first-child.active {
+                background-color: #f98012;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 6px;
+                    background-color: #f98012;
+                }
+            }
+
+            &:nth-child(3).active {
+                background-color: green;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 6px;
+                    background-color: green;
+                }
+            }
+
+            &:last-child.active {
+                background-color: royalblue;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 6px;
+                    background-color: royalblue;
+                }
+            }
+
+            i {
+                display: none;
+            }
+
+
+            a {
+                display: block;
+                color: white;
+                font-size: 1.5rem;
+                line-height: 4rem;
+                font-weight: bold;
+                text-decoration: none;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                transition: .3s;
+            }
+
+            a:hover{
+                cursor: pointer;
+                text-decoration: underline;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+
+
+    @media (min-width: 1024px){
+        button{
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            &.active {
+                position: static;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            li {
+                a {
+                    letter-spacing: 1px;
+                    padding: 0 13px;
+                    font-size: 1.3rem;
+                    line-height: calc(60px - 6px);
+                }
+
+                a:hover{
+                    font-size: 1.4rem;
+                }
+
+                i {
+                    display: inline;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1500px){
+        height: 70px;
+
+        img {
+            height: 40px;
+        }
+
+        ul {
+
+            li {
+                a {
+                    letter-spacing: 1px;
+                    padding: 0 20px;
+                    font-size: 2rem;
+                    line-height: calc(70px - 6px);
+                }
+                a:hover{
+
+                    font-size: 2.1rem;
+                }
+            }
+        }
+    }
+}

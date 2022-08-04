@@ -1,0 +1,124 @@
+.learn-type-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    h2.accept{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    table.users-to-accept {
+        border-collapse: collapse;
+    }
+    
+    table.users-to-accept th,
+    table.users-to-accept td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+    
+    table.users-to-accept th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    @media (min-width: 1024px){
+        font-size: 2.5rem;
+    }
+}
+
+.addUser{
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    margin-bottom: 10px;
+    
+    .blad{
+        text-align: center;
+        color: red;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    label{
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: gray;
+    }
+
+    select{
+        font-size: 1.2rem;
+    }
+    
+    input{
+        font-size: 1.2rem;
+        text-indent: 5px;
+        height: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid black;
+ 
+        // Font styles
+        &:-webkit-autofill::first-line {
+            font-family: arial;
+            font-size: 1.2rem;
+        } 
+
+        &.akceptuj{
+            display: block;
+            text-indent: 0px;
+            color:white;
+            border-radius: 10px;
+            width: 70%;
+            height: 40px;
+            font-size: 1.5rem;
+            margin: 10px auto;
+            border: none;
+            background-color: green;
+            padding: 10px;
+    
+            &:hover{
+                cursor: pointer;
+                background-color: gray;
+            }
+        }
+    }
+    @media (min-width: 1024px){
+        
+        .blad{
+            font-size: 2.3rem;
+        }
+    
+        label{
+            font-size: 2.3rem;
+        }
+
+        select{
+            font-size: 2.3rem;
+        }
+
+        input{
+            font-size: 2.3rem;
+            height: 40px;
+     
+            &:-webkit-autofill::first-line {
+                font-family: arial;
+                font-size: 2.3rem;
+            } 
+    
+            &.akceptuj{
+                height: 60px;
+                font-size: 2.3rem;   
+            }
+        }
+    }
+
+}
+
+.box{
+    @media (min-width: 768px){
+        margin-left: 35%;
+        width: 60%;
+    }
+    
+}
